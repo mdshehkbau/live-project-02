@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    box-sizing: border-box;
+	font-family: tahoma;
+	scroll-behavior: smoth;
+}
+::selection {
+	background: black;
+	color: #FFF;
+}
+.container {
+	width: 80%;
+	margin: auto;
+}
+/* Header Menu CSS Start  */
+.header-menu {
+	background: #1abc9c;
+	color: #FFF;
+}
+
+ul {
+	list-style: none;
+}
+.menu-area {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo a {
+	color: #FFF;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.menu {
+	display: flex;
+}
+.menu li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 15px 15px;
+	display: block;
+	color: #FFF;
+	border-radius: 4px;
+	margin: 5px;
+}
+.menu li a:hover {
+	background: #34495e;
+	color: #1abc9c;
+}
+/* Drop Menu CSS Start  */
+.menu li {
+	position: relative;
+}
+.dropmenu {
+	display: none;
+	position: absolute;
+	background: #1abc9c;
+	min-width: 150px;
+}
+.menu li:hover .dropmenu {
+	display: block;
+}
+/* Sub Drop Menu CSS Start  */
+.dropmenu li {
+	position: relative;
+}
+.subdrop {
+	display: none;
+	position: absolute;
+	background: #1abc9c;
+	min-width: 150px;
+	top: 0;
+	left: 100%;
+}
+.dropmenu li:hover .subdrop {
+	display: block;
+}
+/* Home-Part CSS Start */
+.home_part {
+	background: #222222;
+	height: 80vh;
+	/* width: 500px; */
+	/* height: 400px; */
+	/* margin: auto; */
+	border-radius: 10px;
+}
+.home_con h1 {
+	color: #F5F5F5;
+	text-transform: uppercase;
+	font-size: 50px;
+}
+
+#myDIV {
+	border: 1px solid black;
+	animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+	50% {word-spacing: 50px;}
+	50% {text-shadow: 10px 20px 30px blue;}
+}
+.home_con:hover h1 {
+	color: red;
+}
+.home_con p {
+	color: #AAAAAA;
+	text-transform: capitalize;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 22px;
+}
+
+.home_con_main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+ /* About Part CSS Start */
+.about_part {
+	background: #40407a;
+	padding: 40px 0;
+	
+}
+h3 {
+	color: #F5F5F5;
+	text-transform: capitalize;
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+.baout_con_main {
+	display: flex;
+	gap: 15px;
+	align-items: start;
+	color: #F5F5F5;
+}
+.about_con:nth-child(1) {
+	width: 60%;
+	font-size: 16px;
+	line-height: 25px;
+	
+}
+.about_con:nth-child(2) {
+	width: 40%;
+	font-size: 16px;
+}
+.about_con {
+	color: #AAAAAA;
+}
+.about_con span,
+.about_head span,
+.service_head span {
+	color: #0997BB;  
+}
+.about_con ul li {
+	padding: 5px 0;
+}
+
+ /* Service Part CSS Start */
+
+.pt {
+	padding: 20px 0;
+}
+.service_con_main {
+	display: flex;
+	gap: 24px;
+	flex-wrap: wrap;
+}
+.service_con {
+	width: calc(50% - 24px);
+}
+h4 {
+	text-transform: capitalize;
+	color: #F5F5F5;
+	padding: 15px 0;
+}
+.service_con p {
+	color: #AAAAAA;
+}
+.service_icon {
+	font-size: 40px;
+}
+.service_icon a {
+	color: #0997BB;
+	
+}
+.service_icon i {
+	transition: .4s;
+}
+.service_icon i:hover {
+	color: #f41010;
+	transform: rotate(45deg);
+}
+h2 {
+    background: #151ab7;
+    color: #ffffff;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+.contact_form {
+	background-image: url(img/bg_image.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+    padding: 40px 0;
+    font-family: tahoma, serif;
+}
+
+
+.contact_main {
+    min-height:200px;
+    width: 400px;
+    background: #498aa2;
+    padding: 15px;
+    margin: auto;
+	border-radius: 10px;
+	transition: .4s;
+}
+.contact_main:hover {
+    transform: rotate(45deg);
+	background-color: red;
+}
+.contact_con p {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    
+}
+.contact_con {
+    padding: 10px 0;
+}
+.form_input {
+    width: 100%;
+    height: 35px;
+    font-size: 18px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+.contact_con textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+.contact_con button  {
+    width: 100%;
+    height: 35px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #3c5b5e;
+    border-radius: 4px;
+}
+
+/* Footer CSS */
+footer {
+	background: #3c5b5e;
+}
+.footer_con {
+	padding: 20px 0;
+	color: #AAAAAA;
+	text-transform: capitalize;
+	text-align: center;
+}
